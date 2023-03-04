@@ -1,4 +1,9 @@
 import React from 'react'
+import Skill from './SkillComponent' 
+import Tool from './ToolsAndFrameworkComponent' 
+import Education from './EducationComponent' 
+
+import Resume from '../../assets/Andrew_Gayle-Resume.pdf'
 
 export default function aboutComponent() {
   return (
@@ -7,87 +12,107 @@ export default function aboutComponent() {
             {/*<!-- About Section -->*/}
             <h2 class="w3-text-light-grey">Andrew Gayle</h2>
             <hr style={{width:'200px'}} class="w3-opacity"/>
-            <p>As a full-stack developer with over X years of experience, I have worked on various projects that have improved the business operations for my clients.
+            <p>As a full-stack developer with over {new Date().getFullYear()-2016} years of experience, I have worked on various projects that have improved the business operations for my clients.
                 I relish the opportunity to take on roles that will allow me to learn new skills and grow as a software developer while maintaining a healthy work-life balance. 
-                My experience, attetion to detail and abiltiy to think outside the box is the value I bring to a team. Therefore, I provide a different perspective on software design, implementation, and testing while still learning from my teammates.
-                               
+                My experience, attetion to detail and abiltiy to think outside the box is the value I bring to a team. Therefore, I provide a different perspective on software design, implementation, and testing while still learning from my teammates.                  
             </p>
             
-            <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-            <p class="w3-wide">Photography</p>
-            <div class="w3-white">
-              <div class="w3-dark-grey" style={{height:'28px',width:'95%'}}></div>
-            </div>
-            <p class="w3-wide">Web Design</p>
-            <div class="w3-white">
-              <div class="w3-dark-grey" style={{height:'28px',width:'85%'}}></div>
-            </div>
-            <p class="w3-wide">Photoshop</p>
-            <div class="w3-white">
-              <div class="w3-dark-grey" style={{height:'28px',width:'80%'}}></div>
-            </div><br/>
+
+            <h3 class="w3-padding-16 w3-text-light-grey">Programmming Experience</h3>
+            <Skill
+              skillName="C#"
+              widthPercentage="90%"
+            />
+            <Skill
+              skillName="ASP.Net"
+              widthPercentage="80%"
+            />
+            <Skill
+              skillName="PHP"
+              widthPercentage="80%"
+            />
+            <Skill
+              skillName="JavaScript"
+              widthPercentage="75%"
+            />
+             <Skill
+              skillName="HTML & CSS"
+              widthPercentage="75%"
+            />
+             <Skill
+              skillName="SQL"
+              widthPercentage="95%"
+            />
+            <Skill
+              skillName="JAVA"
+              widthPercentage="65%"
+            />
+            <Skill
+              skillName="Node.JS"
+              widthPercentage="50%"
+            />
+            <Skill
+              skillName="React.JS"
+              widthPercentage="50%"
+            />
             
+            <h3 class="w3-padding-16 w3-text-light-grey">Tools & Frameworks Used</h3>
+
             <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-              <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">11+</span><br/>
-                Partners
-              </div>
-              <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">55+</span><br/>
-                Projects Done
-              </div>
-              <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">89+</span><br/>
-                Happy Clients
-              </div>
-              <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">150+</span><br/>
-                Meetings
-              </div>
+              <Tool
+                name="Visual Studio"
+              />
+              <Tool
+                name="Git"
+              /> 
+              <Tool
+                name="Cypress"
+              />
+               <Tool
+                name="Webdriver.IO"
+              />
+              <Tool
+                name="Microsoft SQL Server"
+              /> 
+              <Tool
+                name="Laravel"
+              />     
+              <Tool
+                name="Eclipse"
+              />               
             </div>
 
-            <button class="w3-button w3-light-grey w3-padding-large w3-section">
-              <i class="fa fa-download"></i> Download Resume
-            </button>
+            <a href={Resume} download='Andrew_Gayle-Resume'>
+              <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                <i class="fa fa-download"></i> Download Resume
+              </button>
+            </a>
             
             {/*<!-- Grid for pricing tables -->*/}
-            {/*++++<h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
-            <div class="w3-row-padding" style="margin:0 -16px">
+            <h3 class="w3-padding-16 w3-text-light-grey">My Education</h3>
+            <div class="w3-row-padding" style={{margin:'0 -16px'}}>
               <div class="w3-half w3-margin-bottom">
-                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                  <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-                  <li class="w3-padding-16">Web Design</li>
-                  <li class="w3-padding-16">Photography</li>
-                  <li class="w3-padding-16">5GB Storage</li>
-                  <li class="w3-padding-16">Mail Support</li>
-                  <li class="w3-padding-16">
-                    <h2>$ 10</h2>
-                    <span class="w3-opacity">per month</span>
-                  </li>
-                  <li class="w3-light-grey w3-padding-24">
-                    <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-                  </li>
-                </ul>
+                <Education
+                  institution='University of Technology Jamaica'
+                  course='BSc. Computing and Information Technology'
+                  major='Computer Science Major'
+                  duration='Aug 2011 - May 2015'
+                  gradeOrAward='GPA 3.48'
+                />
               </div>
-
               <div class="w3-half">
-                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                  <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-                  <li class="w3-padding-16">Web Design</li>
-                  <li class="w3-padding-16">Photography</li>
-                  <li class="w3-padding-16">50GB Storage</li>
-                  <li class="w3-padding-16">Endless Support</li>
-                  <li class="w3-padding-16">
-                    <h2>$ 25</h2>
-                    <span class="w3-opacity">per month</span>
-                  </li>
-                  <li class="w3-light-grey w3-padding-24">
-                    <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-                  </li>
-                </ul>
-              </div>
+              <Education
+                  institution='QualityWorks Consulting Group'
+                  course='AutomationCamp 2022'
+                  major='UI Test Automation'
+                  duration='Oct 2022 - Dec 2022'
+                  gradeOrAward=''
+                />
+              </div>              
+            </div>
+
+           
             {/*<!-- End Grid/Pricing tables -->*/}
-            {/*++++</div>
             
             {/*<!-- Testimonials -->*/}
             {/*++++<h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  

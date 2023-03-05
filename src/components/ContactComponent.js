@@ -23,7 +23,7 @@ export default function ContactComponent() {
     <React.Fragment>
         {/*<!-- Contact Section -->*/}
           <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-            <h2 class="w3-text-light-grey">Reach Out</h2>
+            <h2 class="w3-text-light-grey">Get in touch</h2>
             <hr style={{width:'200px'}} class="w3-opacity"/>
 
             <div class="w3-section">

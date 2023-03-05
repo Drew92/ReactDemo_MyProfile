@@ -35,7 +35,7 @@ export default function ProjectsComponent() {
                 </a>
                 <p>Consumer Affairs Commission    
                   &nbsp;<a href={process.env.REACT_APP_CAC_WEBSITE_URL} target="_blank" rel="noreferrer">website
-                  </a> (UI configuration & content)
+                  </a> (UI layout & content)
                 </p>
                 
                 {/*<img src={drewPicT} style={{width:'100%'}} alt="test"/>

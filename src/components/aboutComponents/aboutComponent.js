@@ -14,7 +14,7 @@ export default function aboutComponent() {
             <hr style={{width:'200px'}} class="w3-opacity"/>
             <p>As a full-stack developer with over {new Date().getFullYear()-2016} years of experience, I have worked on various projects that have improved the business operations for my clients.
                 I relish the opportunity to take on roles that will allow me to learn new skills and grow as a software developer while maintaining a healthy work-life balance. 
-                My experience, attetion to detail and abiltiy to think outside the box is the value I bring to a team. Therefore, I provide a different perspective on software design, implementation, and testing while still learning from my teammates.                  
+                My experience, attetion to detail and abiltiy to think outside the box are the values I bring to any team so you can expect a different perspective on software design, implementation, and testing.                  
             </p>
             
 
@@ -103,7 +103,7 @@ export default function aboutComponent() {
               <div class="w3-half">
               <Education
                   institution='QualityWorks Consulting Group'
-                  course='AutomationCamp 2022'
+                  course='Test AutomationCamp 2022'
                   major='UI Test Automation'
                   duration='Oct 2022 - Dec 2022'
                   gradeOrAward=''

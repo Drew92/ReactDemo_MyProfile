@@ -11,7 +11,7 @@ export default function FooterComponent() {
               <i class="fa fa-github w3-hover-opacity"></i>
             </a>
             <br/><br/>
-            <p class="w3-tiny">Template provided by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" rel="noreferrer" class="w3-hover-text-green">w3.css</a></p>
+            <p class="w3-tiny">Original template provided by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" rel="noreferrer" class="w3-hover-text-green">w3.css</a></p>
           </footer>
     </React.Fragment>
   )

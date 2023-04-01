@@ -2,7 +2,7 @@
 import Sidebar from './components/SidebarComponent'
 import Header from './components/HeaderComponent'
 import About from './components/aboutComponents/AboutComponent'
-import Projects from './components/ProjectsComponent';
+import Projects from './components/projectComponents/ProjectsComponent';
 import Contact from './components/ContactComponent';
 import Footer from './components/FooterComponent';
 

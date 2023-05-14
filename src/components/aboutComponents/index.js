@@ -1,7 +1,10 @@
 import React from 'react'
-import Skill from './SkillComponent' 
-import Tool from './ToolsAndFrameworkComponent' 
-import Education from './EducationComponent' 
+import Skill from './Skill' 
+import Tool from './ToolsAndFramework' 
+import Education from './Education' 
+
+import { mySkills } from '../../constants/mySkills'
+import { myTools } from '../../constants/myTools'
 
 import Resume from '../../assets/Andrew_Gayle-Resume.pdf'
 
@@ -19,67 +22,25 @@ export default function aboutComponent() {
             
 
             <h3 class="w3-padding-16 w3-text-light-grey">Programmming Experience</h3>
-            <Skill
-              skillName="C#"
-              widthPercentage="90%"
-            />
-            <Skill
-              skillName="ASP.Net"
-              widthPercentage="80%"
-            />
-            <Skill
-              skillName="PHP"
-              widthPercentage="80%"
-            />
-            <Skill
-              skillName="JavaScript"
-              widthPercentage="75%"
-            />
-             <Skill
-              skillName="HTML & CSS"
-              widthPercentage="75%"
-            />
-             <Skill
-              skillName="SQL"
-              widthPercentage="95%"
-            />
-            <Skill
-              skillName="JAVA"
-              widthPercentage="65%"
-            />
-            <Skill
-              skillName="Node.JS"
-              widthPercentage="50%"
-            />
-            <Skill
-              skillName="React.JS"
-              widthPercentage="50%"
-            />
-            
+            {
+              mySkills.map( (skill) =>
+                             <Skill
+                                skillName={skill.skillName}
+                                widthPercentage={skill.widthPercentage}
+                              />
+              )
+            }                        
             <h3 class="w3-padding-16 w3-text-light-grey">Tools & Frameworks Used</h3>
 
             <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-              <Tool
-                name="Visual Studio"
-              />
-              <Tool
-                name="Git"
-              /> 
-              <Tool
-                name="Cypress"
-              />
-               <Tool
-                name="Webdriver.IO"
-              />
-              <Tool
-                name="Microsoft SQL Server"
-              /> 
-              <Tool
-                name="Laravel"
-              />     
-              <Tool
-                name="Eclipse"
-              />               
+              {
+                myTools.map( (tool) =>
+                              <Tool
+                                  name={tool.name}
+                                />
+                )
+              } 
+                
             </div>
 
             <a href={Resume} download='Andrew_Gayle-Resume'>

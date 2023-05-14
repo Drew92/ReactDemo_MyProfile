@@ -1,6 +1,6 @@
 import React from 'react'
-import ProjectDetails from './ProjectDetailsComponent'
-import ProjectImages from './ProjectImagesComponent'
+import ProjectDetails from './ProjectDetails'
+import ProjectImages from './ProjectImages'
 import imgSpecialOrder from '../../assets/specialOrder.jpg'
 import imgSpecialOrder_BW from '../../assets/specialOrder-BanW.jpg'
 import imgCAC from '../../assets/CAC.jpg'
@@ -46,7 +46,7 @@ export default function ProjectsComponent() {
                   altText="Picking Module"
                 />
                 <ProjectDetails 
-                  projectStatement="Picking Module. (for interal use only) "
+                  projectStatement="Picking Module. (for interanl use only) "
                   projectTitle="Picking Module"
                   details={`The Picking Module is a "zone picking" platform built on top of the client's 
                             existing P.O.S. and Inventory Management System using Visual Basic Windows Forms 
@@ -70,7 +70,7 @@ export default function ProjectsComponent() {
                   altText="Special Order Web App"
                 />
                 <ProjectDetails 
-                  projectStatement="Special Order Web App. (for interal use only) "
+                  projectStatement="Special Order Web App. (for interanl use only) "
                   projectTitle="Special Order Web App"
                   details="The Special Order Web App is used to perform 
                             C.R.U.D. operations on Special Order client data and was built using ASP.Net,

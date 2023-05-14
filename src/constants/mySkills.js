@@ -1,0 +1,38 @@
+export const mySkills = [
+    {
+        skillName:"C#",
+        widthPercentage:"90%"
+    },
+    {
+        skillName:"ASP.Net",
+        widthPercentage:"80%"
+    },
+    {
+        skillName:"PHP",
+        widthPercentage:"80%"
+    },
+    {
+        skillName:"JavaScript",
+        widthPercentage:"75%"
+    },
+    {
+        skillName:"HTML & CSS",
+        widthPercentage:"75%"
+    },
+    {
+        skillName:"SQL",
+        widthPercentage:"95%"
+    },
+    {
+        skillName:"JAVA",
+        widthPercentage:"65%"
+    },
+    {
+        skillName:"Node.JS",
+        widthPercentage:"50%"
+    },
+    {
+        skillName:"React.JS",
+        widthPercentage:"50%"
+    }
+]

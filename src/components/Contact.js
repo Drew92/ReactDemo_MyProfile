@@ -13,8 +13,10 @@ export default function ContactComponent() {
     emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID,process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
+          alert('Email sent sucessfully');
       }, (error) => {
           console.log(error.text);
+          alert('Email was not sent');
       });
       e.target.reset()
   };

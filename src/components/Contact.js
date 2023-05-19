@@ -6,17 +6,31 @@ import emailjs from '@emailjs/browser'
 export default function ContactComponent() {
 
   const  form = useRef()
+
+  const modal=document.getElementById("dialog")
+
+  const displayModal= (text)=>{    
+    document.getElementById("modalMessage").innerHTML=text
+    modal.showModal()
+  }
+  
+  const hideModal= ()=>{
+    modal.close()
+  }
  
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID,process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_PUBLIC_KEY)
-      .then((result) => {
+      .then((result) => {      
+
+          displayModal('Email was sent sucessfully!');
           console.log(result.text);
-          alert('Email sent sucessfully');
-      }, (error) => {
+
+      }, (error) => {          
+
+          displayModal('Error: email my not mave been deliverd.');
           console.log(error.text);
-          alert('Email was not sent');
       });
       e.target.reset()
   };
@@ -34,6 +48,12 @@ export default function ContactComponent() {
               <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: amagayle@gmail.com</p>
             </div><br/>
             <p>Let's get in touch. Send me a message:</p>
+
+            <dialog  id="dialog" >
+              <div id="modalMessage"></div>
+              <button onClick={()=>hideModal()}>Close</button> 
+            </dialog>
+          
 
             <form ref={form} onSubmit={sendEmail}>
               <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="user_name"/></p>

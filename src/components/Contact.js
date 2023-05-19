@@ -25,11 +25,13 @@ export default function ContactComponent() {
       .then((result) => {      
 
           displayModal('Email was sent sucessfully!');
+          alert('Email was sent sucessfully!');
           console.log(result.text);
 
       }, (error) => {          
 
           displayModal('Error: email my not mave been deliverd.');
+          alert('Error: email my not mave been deliverd.')
           console.log(error.text);
       });
       e.target.reset()

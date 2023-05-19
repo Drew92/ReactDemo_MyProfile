@@ -7,7 +7,7 @@ export default function ContactComponent() {
 
   const  form = useRef()
 
-  const modal=document.getElementById("dialog").bind()
+  const modal=document.getElementById("dialog")
 
   const displayModal= (text)=>{    
     document.getElementById("modalMessage").innerHTML=text
